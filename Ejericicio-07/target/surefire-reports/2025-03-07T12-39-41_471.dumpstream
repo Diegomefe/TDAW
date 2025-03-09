@@ -1,5 +1,0 @@
-# Created at 2025-03-07T12:39:44.899
-Boot Manifest-JAR contains absolute paths in classpath 'D:\TDAW\Ejericicio-07\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
