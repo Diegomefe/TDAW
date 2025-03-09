@@ -1,0 +1,6 @@
+com\example\demo\controllers\HomeController.class
+com\example\demo\controllers\MascotaController.class
+com\example\demo\controllers\MedicoController.class
+com\example\demo\Ejericicio07Application.class
+com\example\demo\controllers\AccesoriosController.class
+com\example\demo\controllers\MedicamentosController.class
