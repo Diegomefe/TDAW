@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mascotas - Listado</title>
+</head>
+<style>
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td,th{
+        border: 1px solid black;
+        padding: 8px;
+        text-aling: left;
+    }
+    th{
+        background-color: #f2f2f2;
+    }
+    caption{
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+</style>
+<body>
+
+    <a href="/">Inicio - Home</a>
+    <h1>Listado de mascotas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Raza</th>
+                <th>Edad(años)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Firulais</td>
+                <td>Gran Perro</td>
+                <td>5</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>
+                    <a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td>Husky</td>
+                <td>3</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>
+                    <a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Toby</td>
+                <td>Pastor Aleman</td>
+                <td>2</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>
+                    <a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Simba</td>
+                <td>Pastor Aleman</td>
+                <td>1</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>
+                    <a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <form method="get" action="/mascotas/agregar">
+        <input type="submit" value="Nueva Mascota">
+
+    </form>
+
+</body>
+</html>
