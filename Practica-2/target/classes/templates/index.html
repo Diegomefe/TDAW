@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    table {
+        width: 30%;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    caption {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    body {
+        text-align: center;
+    }
+</style>
+<body>
+<header>
+    <h1>Registro</h1>
+</header>
+
+<table>
+    <thead>
+    <tr>
+        <th>Campo</th>
+        <th>Dato</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Nombre completo:</td>
+        <td> <input type="text" id="nombre" name="nombre"></td>
+    </tr>
+    <tr>
+        <td>Teléfono:</td>
+        <td> <input type="text" id="telefono" name="telefono"></td>
+    </tr>
+    <tr>
+        <td>Correo Electrónico:</td>
+        <td> <input type="email" id="correo" name="correo"></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<button type="button" onclick="mostrarMensaje()">Enviar</button>
+<p id="mensaje"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
