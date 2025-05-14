@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript - Calculadora Cientifica</title>
+</head>
+<body>
+    <form>
+        <input type="text" disabled name="display" id="display">
+        <table name="tabla-botones" id="tabla-botones">
+            <tbody>
+                <tr>
+                    <td><input type="button" value=" 7 " onclick="agregar('7')"></td>
+                    <td><input type="button" value=" 8 " onclick="agregar('8')"></td>
+                    <td><input type="button" value=" 9 " onclick="agregar('9')"></td>
+                    <td><input type="button" value=" + " onclick="agregar('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value=" 4 " onclick="agregar('4')"></td>
+                    <td><input type="button" value=" 5 " onclick="agregar('5')"></td>
+                    <td><input type="button" value=" 6 " onclick="agregar('6')"></td>
+                    <td><input type="button" value=" - " onclick="agregar('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value=" 1 " onclick="agregar('1')"></td>
+                    <td><input type="button" value=" 2 " onclick="agregar('2')"></td>
+                    <td><input type="button" value=" 3 " onclick="agregar('3')"></td>
+                    <td><input type="button" value=" * " onclick="agregar('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value=" 0 " onclick="agregar('0')"></td>
+                    <td><input type="button" value=" . " onclick="agregar('.')"></td>
+                    <td><input type="button" value=" = " onclick="calcularResultado()"></td>
+                    <td><input type="button" value=" / " onclick="agregar('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value=" C " onclick="limpiarDisplay()"></td>
+                    <td><input type="button" value=" √ " onclick="calcularRaizCuadrada()"></td>
+                    <td><input type="button" value=" x^n " onclick="calcularPotencia()"></td>
+                    <td><input type="button" value=" log " onclick="calcularLog()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+<script src="/assets/js/calculadora-cientifica.js"></script>
+</html>
