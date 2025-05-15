@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculos varios - Javascript</title>
+</head>
+<body>
+<h1>Calculos varios</h1>
+
+<input type="text" id="display" placeholder="Ingrese un número">
+<br>
+<br>
+<select name="opc" id="opc" onchange="cambiarNombre()">
+    <option value="primo">Es primo</option>
+    <option value="par">Es par</option>
+    <option value="facto">Factorial</option>
+    <option value="sumapar">Suma pares</option>
+    <option value="sumaimpa">Suma impares</option>
+</select>
+<br>
+<br>
+<h5>Resultado: </h5>
+<p id="Resultado" class="dynamic-text"></p>
+<br>
+<br>
+<button id="boton" onclick="seleccion()">Verificar </button>
+</body>
+<script src="/assets/js/calculos.js"></script>
+</html>
