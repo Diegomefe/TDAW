@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PracticaVII</title>
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
+          integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q="
+          crossorigin="anonymous"
+  />
+  <!--end::Fonts-->
+  <!--begin::Third Party Plugin(OverlayScrollbars)-->
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/styles/overlayscrollbars.min.css"
+          integrity="sha256-tZHrRjVqNSRyWg2wbppGnT833E/Ys0DHWGwT04GiqQg="
+          crossorigin="anonymous"
+  />
+  <!--end::Third Party Plugin(OverlayScrollbars)-->
+  <!--begin::Third Party Plugin(Bootstrap Icons)-->
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI="
+          crossorigin="anonymous"
+  />
+  <!--end::Third Party Plugin(Bootstrap Icons)-->
+  <!--begin::Required Plugin(AdminLTE)-->
+  <link rel="stylesheet" href="/css/adminlte.css" />
+  <!--end::Required Plugin(AdminLTE)-->
+  <!-- apexcharts -->
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css"
+          integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0="
+          crossorigin="anonymous"
+  />
+  <!-- jsvectormap -->
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css"
+          integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4="
+          crossorigin="anonymous"
+  />
+</head>
+<style>
+  table{
+      width: 100%;
+      border-collapse: collapse;
+  }
+  th, td{
+      border: 1px solid black;
+      padding: 8px;
+      text-aling: left;
+  }
+  th{
+      background-color: #f2f2f2;
+  }
+  caption{
+      font-size: 1.5em;
+      margin: 10px 0;
+  }
+</style>
+
+<body>
+
+<h1>Chats</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th style="text-align: center">Nombre</th>
+    <th style="text-align: center">Mensajes</th>
+    <th style="text-align: center">Chatear con</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="text-align: center">Luis</td>
+    <td style="text-align: center">520</td>
+    <td style="text-align: center"><button type="button" class="btn btn-primary"><i class="bi bi-chat-text-fill"></i></button></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Jose</td>
+    <td style="text-align: center">128</td>
+    <td style="text-align: center"><button type="button" class="btn btn-primary"><i class="bi bi-chat-text-fill"></i></button></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Manuel</td>
+    <td style="text-align: center">75</td>
+    <td style="text-align: center"><button type="button" class="btn btn-primary"><i class="bi bi-chat-text-fill"></i></button></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Ana</td>
+    <td style="text-align: center">90</td>
+    <td style="text-align: center"><button type="button" class="btn btn-primary"><i class="bi bi-chat-text-fill"></i></button></td>
+  </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
+
+
+<div class="card direct-chat direct-chat-primary mb-4">
+  <div class="card-header">
+    <h3 class="card-title">Direct Chat</h3>
+    <div class="card-tools">
+      <span title="3 New Messages" class="badge text-bg-primary"> 3 </span>
+      <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
+        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
+      </button>
+      <button
+              type="button"
+              class="btn btn-tool"
+              title="Contacts"
+              data-lte-toggle="chat-pane"
+      >
+        <i class="bi bi-chat-text-fill"></i>
+      </button>
+      <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+  </div>
+  <!-- /.card-header -->
+  <div class="card-body">
+    <!-- Conversations are loaded here -->
+    <div class="direct-chat-messages">
+      <!-- Message. Default to the start -->
+      <div class="direct-chat-msg">
+        <div class="direct-chat-infos clearfix">
+          <span class="direct-chat-name float-start"> Alexander Pierce </span>
+          <span class="direct-chat-timestamp float-end"> 23 Jan 2:00 pm </span>
+        </div>
+        <!-- /.direct-chat-infos -->
+        <img
+                class="direct-chat-img"
+                src="/assets/img/user1-128x128.jpg"
+                alt="message user image"
+        />
+        <!-- /.direct-chat-img -->
+        <div class="direct-chat-text">
+          Is this template really for free? That's unbelievable!
+        </div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+      <!-- Message to the end -->
+      <div class="direct-chat-msg end">
+        <div class="direct-chat-infos clearfix">
+          <span class="direct-chat-name float-end"> Sarah Bullock </span>
+          <span class="direct-chat-timestamp float-start"> 23 Jan 2:05 pm </span>
+        </div>
+        <!-- /.direct-chat-infos -->
+        <img
+                class="direct-chat-img"
+                src="/assets/img/user3-128x128.jpg"
+                alt="message user image"
+        />
+        <!-- /.direct-chat-img -->
+        <div class="direct-chat-text">You better believe it!</div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+      <!-- Message. Default to the start -->
+      <div class="direct-chat-msg">
+        <div class="direct-chat-infos clearfix">
+          <span class="direct-chat-name float-start"> Alexander Pierce </span>
+          <span class="direct-chat-timestamp float-end"> 23 Jan 5:37 pm </span>
+        </div>
+        <!-- /.direct-chat-infos -->
+        <img
+                class="direct-chat-img"
+                src="/assets/img/user1-128x128.jpg"
+                alt="message user image"
+        />
+        <!-- /.direct-chat-img -->
+        <div class="direct-chat-text">
+          Working with AdminLTE on a great new app! Wanna join?
+        </div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+      <!-- Message to the end -->
+      <div class="direct-chat-msg end">
+        <div class="direct-chat-infos clearfix">
+          <span class="direct-chat-name float-end"> Sarah Bullock </span>
+          <span class="direct-chat-timestamp float-start"> 23 Jan 6:10 pm </span>
+        </div>
+        <!-- /.direct-chat-infos -->
+        <img
+                class="direct-chat-img"
+                src="/assets/img/user3-128x128.jpg"
+                alt="message user image"
+        />
+        <!-- /.direct-chat-img -->
+        <div class="direct-chat-text">I would love to.</div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+    </div>
+    <!-- /.direct-chat-messages-->
+    <!-- Contacts are loaded here -->
+    <div class="direct-chat-contacts">
+      <ul class="contacts-list">
+        <li>
+          <a href="#">
+            <img
+                    class="contacts-list-img"
+                    src="/assets/img/user1-128x128.jpg"
+                    alt="User Avatar"
+            />
+            <div class="contacts-list-info">
+                              <span class="contacts-list-name">
+                                Count Dracula
+                                <small class="contacts-list-date float-end"> 2/28/2023 </small>
+                              </span>
+              <span class="contacts-list-msg"> How have you been? I was... </span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+        <li>
+          <a href="#">
+            <img
+                    class="contacts-list-img"
+                    src="/assets/img/user7-128x128.jpg"
+                    alt="User Avatar"
+            />
+            <div class="contacts-list-info">
+                              <span class="contacts-list-name">
+                                Sarah Doe
+                                <small class="contacts-list-date float-end"> 2/23/2023 </small>
+                              </span>
+              <span class="contacts-list-msg"> I will be waiting for... </span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+        <li>
+          <a href="#">
+            <img
+                    class="contacts-list-img"
+                    src="/assets/img/user3-128x128.jpg"
+                    alt="User Avatar"
+            />
+            <div class="contacts-list-info">
+                              <span class="contacts-list-name">
+                                Nadia Jolie
+                                <small class="contacts-list-date float-end"> 2/20/2023 </small>
+                              </span>
+              <span class="contacts-list-msg"> I'll call you back at... </span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+        <li>
+          <a href="#">
+            <img
+                    class="contacts-list-img"
+                    src="/assets/img/user5-128x128.jpg"
+                    alt="User Avatar"
+            />
+            <div class="contacts-list-info">
+                              <span class="contacts-list-name">
+                                Nora S. Vans
+                                <small class="contacts-list-date float-end"> 2/10/2023 </small>
+                              </span>
+              <span class="contacts-list-msg"> Where is your new... </span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+        <li>
+          <a href="#">
+            <img
+                    class="contacts-list-img"
+                    src="/assets/img/user6-128x128.jpg"
+                    alt="User Avatar"
+            />
+            <div class="contacts-list-info">
+                              <span class="contacts-list-name">
+                                John K.
+                                <small class="contacts-list-date float-end"> 1/27/2023 </small>
+                              </span>
+              <span class="contacts-list-msg"> Can I take a look at... </span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+        <li>
+          <a href="#">
+            <img
+                    class="contacts-list-img"
+                    src="/assets/img/user8-128x128.jpg"
+                    alt="User Avatar"
+            />
+            <div class="contacts-list-info">
+                              <span class="contacts-list-name">
+                                Kenneth M.
+                                <small class="contacts-list-date float-end"> 1/4/2023 </small>
+                              </span>
+              <span class="contacts-list-msg"> Never mind I found... </span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+      </ul>
+      <!-- /.contacts-list -->
+    </div>
+    <!-- /.direct-chat-pane -->
+  </div>
+  <!-- /.card-body -->
+  <div class="card-footer">
+    <form action="#" method="post">
+      <div class="input-group">
+        <input
+                type="text"
+                name="message"
+                placeholder="Type Message ..."
+                class="form-control"
+        />
+        <span class="input-group-append">
+                          <button type="button" class="btn btn-primary">Send</button>
+                        </span>
+      </div>
+    </form>
+  </div>
+  <!-- /.card-footer-->
+</div>
